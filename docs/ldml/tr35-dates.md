@@ -2495,7 +2495,8 @@ A semantic skeleton associates fields with zero or more options, listed in this 
 
 The _length_ determines how wide the fields should be rendered. There are three choices:
 
-1. **Long:** Much space is available. Fields are typically spelled-out. Example: January 1, 2000
+1. **Long:** Much space is available. Fields are typically spelled-out. 
+    - Examples: January 1, 2000 or 250 BCE
 2. **Medium:** Space is limited, and spelled-out fields are desired. Example: Jan. 1, 2000
 3. **Short:** Space is limited, and numeric fields are desired. Example: 1/1/2000
 
@@ -2526,7 +2527,7 @@ Note: The most common behavior with "column" alignment is for implementations to
 
 The _year style_ defines the level of precision to use when displaying the year. There are three choices:
 
-1. **Auto:** Display the year with full or partial precision, and display the era if needed to disambiguate the year, depending on locale, calendar, and length. Example: Jan. 1, '00
+1. **Auto:** Display the year with full or partial precision, and display the era if needed to disambiguate the year, depending on locale, calendar, and length. Example: Jan. 1, ‘00 or 1 January 2000
 2. **Full:** Display the year with full precision, and display the era if needed to disambiguate the year, depending on locale and calendar. Example: Jan. 1, 2000
 3. **With era:** Display the year with full precision, and always display the era. Example: Jan. 1, 2000 AD
 
@@ -2569,7 +2570,7 @@ Note: An option could be added in the future to give the developer more control 
 
 The _fractional second digits_ option defines how many fractional digits should be displayed in the second field. The choices are:
 
-1. **Auto:**Display fractional digits if they are provided in the input. Do not pad with trailing zeros.
+1. **Auto:** Display fractional digits if they are provided in the input. Do not pad with trailing zeros.
 2. An integer from 0 to 9: display exactly this many fractional digits. Extra digits may be truncated (rounded toward zero), and trailing zeros may be added.
 
 Note: The finest level of precision is currently specified as nanoseconds, consistent with the requirements of many popular datetime libraries.
