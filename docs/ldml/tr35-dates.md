@@ -2667,9 +2667,9 @@ This means that the Year, Month, and Day semantic field mapping in en-US should 
 
 The [year style](#Semantic_Skeleton_Year_Style) should change the skeleton for all lengths as follows:
 
-- Auto: No change from datetimeSkeleton
-- Full: Change "yy" to "y"
-- With era: Change "yy" to "y" and add "G" if there is not already an era field
+- Auto: No change from datetimeSkeleton (note: could be "y", "yy", "yG", or another combination of year and era fields)
+- Full: Replace "yy" with "y"
+- With era: Replace "yy" with "y" and add "G" if there is not already an era field
 
 ### <a name="Semantic_Skeleton_Conformance" href="#Semantic_Skeleton_Conformance">Semantic Skeleton Conformance</a>
 
