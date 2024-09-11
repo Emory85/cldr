@@ -2460,6 +2460,8 @@ The valid time field sets are in the following table:
 
 Note: Minute and Second are not valid time field sets on their own because they do not refer to a particular time of day. They must be interpreted in the context of an explicit hour.
 
+Note: Durations, such as "3 minutes and 12 seconds" (or 3:12), are not handled through the skeleton mechanisms.
+
 ##### <a name="Semantic_Time_Zone_Field_Sets" href="#Semantic_Time_Zone_Field_Sets">Time Zone Field Sets</a>
 
 A _time zone field set_ refers to a particular time zone. There is only one time zone field and one time zone field set, but the rendering can be configured with the [Zone Style](#Semantic_Skeleton_Time_Zone_Style) option.
