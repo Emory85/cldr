@@ -2497,10 +2497,15 @@ A semantic skeleton associates fields with zero or more options, listed in this 
 
 The _length_ determines how wide the fields should be rendered. There are three choices:
 
-1. **Long:** Much space is available. Fields are typically spelled-out. 
-    - Examples: January 1, 2000 or 250 BCE
-2. **Medium:** Space is limited, and spelled-out fields are desired. Example: Jan. 1, 2000
-3. **Short:** Space is limited, and numeric fields are desired. Example: 1/1/2000
+1. **Long:** Much space is available. Fields are typically spelled-out. Examples:
+    - January 1, 2000
+    - Rabiʻ I 7, 1446 AH
+2. **Medium:** Space is limited, and spelled-out fields are desired. Examples:
+    - Jan. 1, 2000
+    - Rab. I 7, 1446 AH
+3. **Short:** Space is limited, and numeric fields are desired. Examples:
+    - 1/1/00
+    - 3/7/1446 AH
 
 Note: Unlike standard CLDR pattern and skeleton strings, there is only one length option for the whole semantic skeleton. This is based on the principle that developers ought to inform the library how much space is available and the context in which the date/time is being displayed, and translators ought to decide how to use that space. For example, it is possible for long month names and abbreviated weekday names to coexist, but that should be a translator decision, not a developer decision. However, this option may be extended in the future to allow hinting at lengths for individual fields.
 
