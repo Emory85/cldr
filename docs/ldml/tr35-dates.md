@@ -2376,7 +2376,7 @@ This section describes only the structures and enumerations for expressing a sem
 Note: This document does not currently define a string form, but we may need one for MessageFormat.
 
 > [!IMPORTANT]
-> This section is a technical preview and should not be considered stable.
+> Semantic skeletons (this section) are a technical preview and should not be considered stable.
 
 ### <a name="Parts_of_a_Semantic_Skeleton" href="#Parts_of_a_Semantic_Skeleton">Parts of a Semantic Skeleton</a>
 
