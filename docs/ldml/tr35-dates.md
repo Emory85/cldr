@@ -2534,9 +2534,9 @@ Note: The most common behavior with "column" alignment is for implementations to
 
 The _year style_ defines the level of precision to use when displaying the year. There are three choices:
 
-1. **Auto:** Display the year with full or partial precision, and display the era if needed to disambiguate the year, depending on locale, calendar, and length. Example: Jan. 1, ‘00 or 1 January 2000
-2. **Full:** Display the year with full precision, and display the era if needed to disambiguate the year, depending on locale and calendar. Example: Jan. 1, 2000
-3. **With era:** Display the year with full precision, and always display the era. Example: Jan. 1, 2000 AD
+1. **Auto:** Display the year with full or partial precision, and display the era if needed to disambiguate the year, depending on locale, calendar, and length.
+2. **Full:** Display the year with full precision, and display the era if needed to disambiguate the year, depending on locale and calendar.
+3. **With era:** Display the year with full precision, and always display the era.
 
 Going down the list, the three options can be seen as requiring additional context. "Auto" gives translators the most flexibility; "full" requires that the year be displayed with full precision; and "with era" additionally requires that the era field be displayed.
 
@@ -2546,6 +2546,14 @@ Implementations could choose to use heuristics such as the following:
 - Gregorian years after January 1, 1000: require full precision, but okay to hide era
 - Other Gregorian years: require full precision and the era
 - Non-Gregorian years: show era if not the default calendar system in the locale
+
+Examples in Gregorian:
+
+| Year Style | 2020 CE | 1500 CE | 750 CE | 500 BCE |
+|------------|---------|---------|--------|---------|
+| Auto       | ‘20     | 1500    | 750 AD | 500 BC  |
+| Full       | 2020    | 1500    | 750 AD | 500 BC  |
+| With era   | 2020 AD | 1500 AD | 750 AD | 500 BC  |
 
 Note: This algorithm and the list of choices is likely to evolve as CLDR learns more about era display customs in different regions and calendar systems, and it may become normative.
 
