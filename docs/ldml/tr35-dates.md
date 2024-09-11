@@ -2690,7 +2690,6 @@ For example, a conformant specification must reject the following inputs:
 |----------------|--------------------------------|--------------------------------|
 | { Year, Day }  | Length: Long                   | Invalid field set              |
 | { Month, Day } | Length: Long\nYear Style: Full | Year Style requires Year field |
-| { Hour }       | Hour Cycle: H23                | Hour requires Length option    |
 
 * * *
 
